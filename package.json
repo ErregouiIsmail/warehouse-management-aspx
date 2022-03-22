@@ -1,0 +1,19 @@
+{
+  "name": "wms-aspx",
+  "version": "1.0.0",
+  "description": "A warehouse management system using the asp.net",
+  "private": true,
+  "scripts": {
+    "generate-sql-entries": "node data/generate-sql-entries.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErregouiIsmail/warehouse-management-aspx.git"
+  },
+  "author": "Otmane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ErregouiIsmail/warehouse-management-aspx/issues"
+  },
+  "homepage": "https://github.com/ErregouiIsmail/warehouse-management-aspx#readme"
+}
