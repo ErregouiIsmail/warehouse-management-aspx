@@ -22,6 +22,6 @@ medias (id, type, name, source, description, product_id, created_at, updated_at)
 
 suppliers (id, name, description, address_id, created_at, updated_at)
 
-invoices (id, state, description, supplier_id, issued_at, updated_at)
+invoices (id, state, type, description, supplier_id, issued_at, updated_at)
 invoices_items (id, invoice_id, product_id, qty, price)
 ```
