@@ -25,3 +25,45 @@ suppliers (id, name, description, address_id, created_at, updated_at)
 invoices (id, state, type, description, supplier_id, issued_at, updated_at)
 invoices_items (id, invoice_id, product_id, qty, price)
 ```
+
+- Roles
+
+predefined in 3 roles that the superuser can add more accordingly
+
+- Permissions
+
+  the following are the permissions that the app supports
+
+  - Superuser
+    - counties: Full Access
+    - cities: Full Access
+    - roles: Full Access
+    - addresses: Full Access
+    - categories: Full Access
+    - users: Full Access
+    - brands: Full Access
+    - products & medias: Full Access
+    - suppliers: Full Access
+    - invoices & invoices_items: Read Only
+  - Manager / Supervisor
+    - counties: Read Only
+    - cities: Read Only
+    - roles: Read Only
+    - addresses: Read Only
+    - categories: Read Only
+    - users: Read Only for non Superusers
+    - brands: Full Access
+    - products & medias: Full Access
+    - suppliers: Full Access
+    - invoices & invoices_items: Read Only
+  - Sales Ops
+    - counties: Read Only
+    - cities: Read Only
+    - roles: Read Only
+    - addresses: Read Only
+    - categories: Read Only
+    - users: Read Only for himself and Sales Ops
+    - brands: Read Only
+    - products & medias: Read Only
+    - suppliers: Read Only
+    - invoices & invoices_items: Full Access
