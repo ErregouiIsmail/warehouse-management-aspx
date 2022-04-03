@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+* {
+  font-family: 'Reggae One', cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1240px;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.flx {
+  display: flex;
+  flex-direction: row;
+}
+
+header .header {
+  padding: 14px 34px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .header a {
+  background: linear-gradient(0deg, rgba(238, 238, 238, 0.2), rgba(238, 238, 238, 0.2)), #ebebeb;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  padding: 6px 15px;
+  color: black;
+  align-items: center;
+}
+
+header .header a span {
+  padding: 4px 0 4px 46px;
+  background: url('../img/icons/profile.png') no-repeat;
+}
+
+main .back {
+  display: block;
+  width: 45px;
+  height: 45px;
+  background: url('../img/icons/back.png') no-repeat center #c4c4c4;
+  border-radius: 50%;
+}
+
+#search {
+  position: relative;
+  margin-bottom: 122px;
+}
+
+.search {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.search .control {
+  background: url('../img/icons/search.png') no-repeat calc(100% - 5px) center #ebebeb;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  padding: 10px 33px;
+  border: none;
+  width: 300px;
+}
+
+.data {
+  margin: 0 70px;
+}
+
+.data table {
+  background: #c4c4c4;
+  border-radius: 50px;
+  width: 100%;
+
+  text-align: center;
+}
+
+.data table thead {
+  color: white;
+}
+
+.data table .edit,
+.data table .delete {
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.data table .edit {
+  background: url('../img/icons/edit.png') no-repeat center;
+}
+
+.data table .delete {
+  background: url('../img/icons/delete.png') no-repeat center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1rem 0;
+  background-color: #ebebeb;
+}
