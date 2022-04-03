@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+* {
+  font-family: 'Reggae One', cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1240px;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.flx {
+  display: flex;
+  flex-direction: row;
+}
+
+header .header {
+  padding: 14px 34px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .header a {
+  background: linear-gradient(0deg, rgba(238, 238, 238, 0.2), rgba(238, 238, 238, 0.2)), #ebebeb;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  padding: 6px 15px;
+  color: black;
+  align-items: center;
+}
+
+header .header a span {
+  padding: 4px 0 4px 46px;
+  background: url('../img/icons/profile.png') no-repeat;
+}
+
+main h1 {
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+main .form {
+  width: 400px;
+  margin: 0 auto;
+
+  background: #ebebeb;
+  border-radius: 20px;
+
+  padding: 12px 50px 23px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form .back {
+  display: block;
+  width: 45px;
+  height: 45px;
+  background: url('../img/icons/back.png') no-repeat center #c4c4c4;
+  border-radius: 50%;
+  margin: 0 auto 48px;
+}
+
+.form .control {
+  width: 300px;
+  background: #989898;
+  padding: 13px 41px;
+  border-radius: 30px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  margin-bottom: 5px;
+}
+
+.form select.control {
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+  background: url('../img/icons/dropdown.png') no-repeat #989898 calc(100% - 12px) center;
+  padding-right: 32px;
+}
+
+.form .control::placeholder {
+  color: #ffffff;
+}
+
+.form button {
+  margin-top: 50px;
+  background: #3a97e8;
+  border-radius: 50px;
+  padding: 11px 57px;
+  color: #ffffff;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1rem 0;
+  background-color: #ebebeb;
+}

@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+* {
+  font-family: 'Reggae One', cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1240px;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.flx {
+  display: flex;
+  flex-direction: row;
+}
+
+header .header {
+  padding: 14px 34px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .header a {
+  background: linear-gradient(0deg, rgba(238, 238, 238, 0.2), rgba(238, 238, 238, 0.2)), #ebebeb;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  padding: 8px 25px;
+  color: black;
+}
+
+main .hero {
+  background-image: url('../img/hero-bg.png');
+
+  height: 400px;
+
+  margin-bottom: 51px;
+
+  color: white;
+}
+
+main .hero .content {
+  background: rgba(211, 200, 200, 0.29);
+  float: right;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  width: 450px;
+  align-items: center;
+  margin-right: 13px;
+  padding: 0 8px;
+}
+
+.hero .content h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+main .opts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.opts .opt {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.opts .opt-img {
+  height: 250px;
+  width: 250px;
+}
+
+.opt:nth-child(1) .opt-img {
+  background-image: url('../img/opt1.png');
+}
+
+.opt:nth-child(2) .opt-img {
+  background-image: url('../img/opt2.png');
+}
+
+.opts .opt .txt {
+  position: relative;
+}
+.opts .opt .txt::after {
+  position: absolute;
+  content: '+100';
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+}
+
+.opts .opt p {
+  margin-top: 13px;
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1rem 0;
+  background-color: #ebebeb;
+}
